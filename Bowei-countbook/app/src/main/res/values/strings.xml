@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">301A1</string>
+    <string name="edit_message">Enter item name</string>
+    <string name="comment">Enter the comment</string>
+</resources>
