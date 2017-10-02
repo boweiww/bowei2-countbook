@@ -1,0 +1,107 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:2:1-27:12
+	package
+		ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:3:5-48
+		INJECTED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml
+application
+ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:5:5-25:19
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/frost/.android/build-cache/d72e09c24b7a1dab6b2d954cda63c3cc55436f98/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/frost/.android/build-cache/4a36d11162b8197c64429be5a3595d9a6217c882/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/frost/.android/build-cache/f5901ced9625b59a9227fdfb1ec33395e5bdc98b/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/frost/.android/build-cache/a409f947db00f72f79653b08c663e026a0caa594/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/frost/.android/build-cache/f6d2e4a08e84a6b0c9cb7164c536f0b06d74bd66/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/frost/.android/build-cache/d83eab74c50fb919649836f3059404d875d030b4/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/frost/.android/build-cache/68c40a75a7ebb68921198b71d79aa11a3774d628/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/frost/.android/build-cache/1e7d8a1fb45b7f3732a6f608eae260f8ae933cd6/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/frost/.android/build-cache/5439524e8ee2eb5e22bd649e31bb553cfa32e6b9/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/frost/.android/build-cache/09a1bf6da7cf6005bd5b7ae50ad5419d4702b2e8/output/AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:8:9-41
+	android:supportsRtl
+		ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:10:9-35
+	android:roundIcon
+		ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:9:9-54
+	android:allowBackup
+		ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:7:9-43
+	android:theme
+		ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.frost.bowei_countbook.MainActivity
+ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:16:27-74
+activity#com.example.frost.bowei_countbook.ListActivity
+ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:19:9-50
+	android:name
+		ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:19:19-47
+activity#com.example.frost.bowei_countbook.Editactivity
+ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:20:9-50
+	android:name
+		ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:20:19-47
+activity#com.example.frost.bowei_countbook.ListInfo
+ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:21:9-46
+	android:name
+		ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:21:19-43
+activity#com.example.frost.bowei_countbook.FurtherEdit
+ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:23:9-49
+	android:name
+		ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:23:19-46
+activity#com.example.frost.bowei_countbook.ValueActivity
+ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:24:9-60
+	android:name
+		ADDED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml:24:19-48
+uses-sdk
+INJECTED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/frost/.android/build-cache/d72e09c24b7a1dab6b2d954cda63c3cc55436f98/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/frost/.android/build-cache/4a36d11162b8197c64429be5a3595d9a6217c882/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/frost/.android/build-cache/f5901ced9625b59a9227fdfb1ec33395e5bdc98b/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/frost/.android/build-cache/a409f947db00f72f79653b08c663e026a0caa594/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/frost/.android/build-cache/f6d2e4a08e84a6b0c9cb7164c536f0b06d74bd66/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/frost/.android/build-cache/d83eab74c50fb919649836f3059404d875d030b4/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/frost/.android/build-cache/68c40a75a7ebb68921198b71d79aa11a3774d628/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/frost/.android/build-cache/1e7d8a1fb45b7f3732a6f608eae260f8ae933cd6/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/frost/.android/build-cache/5439524e8ee2eb5e22bd649e31bb553cfa32e6b9/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/frost/.android/build-cache/09a1bf6da7cf6005bd5b7ae50ad5419d4702b2e8/output/AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/frost/.android/build-cache/d72e09c24b7a1dab6b2d954cda63c3cc55436f98/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/frost/Desktop/Bowei-countbook/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/frost/.android/build-cache/d72e09c24b7a1dab6b2d954cda63c3cc55436f98/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/frost/.android/build-cache/4a36d11162b8197c64429be5a3595d9a6217c882/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/frost/.android/build-cache/f5901ced9625b59a9227fdfb1ec33395e5bdc98b/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/frost/.android/build-cache/a409f947db00f72f79653b08c663e026a0caa594/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/frost/.android/build-cache/f6d2e4a08e84a6b0c9cb7164c536f0b06d74bd66/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/frost/.android/build-cache/d83eab74c50fb919649836f3059404d875d030b4/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/frost/.android/build-cache/68c40a75a7ebb68921198b71d79aa11a3774d628/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/frost/.android/build-cache/1e7d8a1fb45b7f3732a6f608eae260f8ae933cd6/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/frost/.android/build-cache/5439524e8ee2eb5e22bd649e31bb553cfa32e6b9/output/AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/frost/.android/build-cache/d72e09c24b7a1dab6b2d954cda63c3cc55436f98/output/AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/frost/.android/build-cache/d72e09c24b7a1dab6b2d954cda63c3cc55436f98/output/AndroidManifest.xml:26:9-47
