@@ -1,5 +1,21 @@
+
+/*
+ * Class Name : Editactivity
+ *
+ * Version: V 1.0
+ *
+ * Date: Oct 1, 2017
+ *
+ * Copyright  CMPUT301, University of Alberta - All Rights Reserved. You may use, distribute, or modify this code under terms and conditions of the code behaviour of students.
+ */
 package com.example.frost.bowei_countbook;
 
+/**
+ *Represents a Editactivity
+ *@author Bowei Wang
+ *@version 1.0
+ *@see com.example.frost.bowei_countbook.MainActivity
+ */
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -22,12 +38,12 @@ public class Editactivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
-
+        //print the information that let user input value
         String message = "Which list you would like to Edit?(Please enter the name of List)";
         TextView textView = (TextView) findViewById(R.id.textView2);
         textView.setText(message);
 
-
+        //handle button add
         Button bt_Demo = (Button)findViewById(R.id.button5);
         bt_Demo.setOnClickListener(new View.OnClickListener()
 
@@ -42,6 +58,7 @@ public class Editactivity extends AppCompatActivity {
                 EditText editText = (EditText) findViewById(R.id.editText2);
                 String message = editText.getText().toString();
                 Context context = getApplicationContext();
+                //editText is where the name of the item inputted, editText2 is where number of items inputted
                 EditText editText2 = (EditText) findViewById(R.id.editText3);
                 String initial = editText2.getText().toString();
                 //raise exception when input is not integer
@@ -55,7 +72,7 @@ public class Editactivity extends AppCompatActivity {
                     return;
                 }
                 int init = Integer.parseInt(initial);
-
+                //check whether input number is negative
                 if (Math.signum(init) == -1.0) {
                     Toast toast = Toast.makeText(context, "initial value is negative", duration);
                     toast.show();
@@ -77,7 +94,7 @@ public class Editactivity extends AppCompatActivity {
                     toast.show();
                     return;
                 }
-
+                //Edit the SharedPreferences that saves the list of all elements
                 SharedPreferences.Editor editor = sharedPref.edit();
 
                 EditText editText3 = (EditText) findViewById(R.id.editText7);
@@ -92,7 +109,7 @@ public class Editactivity extends AppCompatActivity {
 
 
                 edit.commit();
-                //once the item passed test. creat a new name with its name
+                //once the item passed test. creat a new name in SharedPreferences with its name
                 DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                 Date date = new Date();
                 editor.putString("date",  dateFormat.format(date));
@@ -107,8 +124,6 @@ public class Editactivity extends AppCompatActivity {
                 toast.show();
 
 
-                //响应Clicked事件
-                //......
             }
         });
     }
@@ -134,7 +149,7 @@ public class Editactivity extends AppCompatActivity {
             editor.commit();
             return;
         }
-
+        //If the item is exist, call ValueActivity
 
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);

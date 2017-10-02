@@ -1,5 +1,21 @@
+
+/*
+ * Class Name : FurtherEdit
+ *
+ * Version: V 1.0
+ *
+ * Date: Oct 1, 2017
+ *
+ * Copyright  CMPUT301, University of Alberta - All Rights Reserved. You may use, distribute, or modify this code under terms and conditions of the code behaviour of students.
+ */
 package com.example.frost.bowei_countbook;
 
+/**
+ *Represents a FurtherEdit
+ *@author Bowei Wang
+ *@version 1.0
+ *@see com.example.frost.bowei_countbook.ValueActivity
+ */
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -49,6 +65,7 @@ public class FurtherEdit extends AppCompatActivity {
                 //when you decide to edit current value, this function will check whether it is valid
                 EditText editText = (EditText) findViewById(R.id.editText5);
                 String cur = editText.getText().toString();
+                //check whether input is an integer, if not, raise exception
                 try{
                     int trynum =Integer.parseInt(cur);
                 } catch ( Exception e){
@@ -59,7 +76,7 @@ public class FurtherEdit extends AppCompatActivity {
                     return;
                 }
                 int current = Integer.parseInt(cur);
-
+                //check whether input is negative
                 if (Math.signum(current) == -1.0) {
                     Toast toast = Toast.makeText(context, "current value is negative", duration);
                     toast.show();
@@ -69,7 +86,7 @@ public class FurtherEdit extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor = sharedPref.edit();
                 editor.putInt("current value", current);
-
+                //save new current value and edit date
                 DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                 Date date = new Date();
                 editor.putString("date",  dateFormat.format(date));
@@ -87,6 +104,7 @@ public class FurtherEdit extends AppCompatActivity {
 
                 EditText editText = (EditText) findViewById(R.id.editText4);
                 String ini = editText.getText().toString();
+                //check whether input is an integer, if not, raise exception
 
                 try{
                     int trynum1 =Integer.parseInt(ini);
@@ -98,6 +116,7 @@ public class FurtherEdit extends AppCompatActivity {
                     return;
                 }
                 int init = Integer.parseInt(ini);
+                //check whether input is negative
 
                 if (Math.signum(init) == -1.0) {
                     Toast toast = Toast.makeText(context, "initial value is negative", duration);
@@ -108,6 +127,7 @@ public class FurtherEdit extends AppCompatActivity {
                 }
                 SharedPreferences.Editor editor = sharedPref.edit();
                 editor.putInt("initial value", init);
+                //save new initial value and edit date
 
                 DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                 Date date = new Date();
@@ -143,7 +163,7 @@ public class FurtherEdit extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //This method will go back to main activity
+                //This method connect finish button and will go back to main activity
 
                 Intent intent = new Intent(context, MainActivity.class);
                 startActivity(intent);

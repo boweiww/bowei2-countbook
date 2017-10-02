@@ -1,5 +1,21 @@
+
+/*
+ * Class Name : ListActivity
+ *
+ * Version: V 1.0
+ *
+ * Date: Oct 1, 2017
+ *
+ * Copyright  CMPUT301, University of Alberta - All Rights Reserved. You may use, distribute, or modify this code under terms and conditions of the code behaviour of students.
+ */
 package com.example.frost.bowei_countbook;
 
+/**
+ *Represents a ListActivity
+ *@author Bowei Wang
+ *@version 1.0
+ *@see com.example.frost.bowei_countbook.MainActivity
+ */
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
@@ -43,15 +59,18 @@ public class ListActivity extends AppCompatActivity {
 
         String csvList = prefs.getString("myList",null);
         //access what saved in the name list if nothing is saved, go back
-
+        /*
         if (csvList == null){
 
             Toast toast = Toast.makeText(context, "The list is empty", duration);
             toast.show();
 
         }
+        */
         String[] items = csvList.split(",");
         List<String> itemLists = new ArrayList<String>();
+        //get the list of saved items, check whether its date is null, if it has nothing in date
+        //that means the list is empty,then return
         for(int i=0; i < items.length; i++){
 
             SharedPreferences preferen=getSharedPreferences(items[i],Context.MODE_PRIVATE);
@@ -95,7 +114,7 @@ public class ListActivity extends AppCompatActivity {
                     @Override
                     public void onItemClick(AdapterView<?> arg0, View view,
                                             int position, long id) {
-                        //handle button on click
+                        //handle button on click to the list
 
                         Object o = mainListView.getItemAtPosition(position);
                         String item = o.toString();
@@ -107,9 +126,9 @@ public class ListActivity extends AppCompatActivity {
                             item= item.substring(0, item.indexOf(";"));
 
                         }
+                        //If a element of list is clicked, it will show the detailed information
                         intent.putExtra(EXTRA_MESSAGE, item);
                         startActivity(intent);
-                        //Take action here.
                     }
                 }
         );

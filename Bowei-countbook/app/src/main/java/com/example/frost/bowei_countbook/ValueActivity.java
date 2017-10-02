@@ -1,5 +1,21 @@
+
+/*
+ * Class Name : ValueActivity
+ *
+ * Version: V 1.0
+ *
+ * Date: Oct 1, 2017
+ *
+ * Copyright  CMPUT301, University of Alberta - All Rights Reserved. You may use, distribute, or modify this code under terms and conditions of the code behaviour of students.
+ */
 package com.example.frost.bowei_countbook;
 
+/**
+ *Represents a ValueActivity
+ *@author Bowei Wang
+ *@version 1.0
+ *@see com.example.frost.bowei_countbook.Editactivity
+ */
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -22,9 +38,7 @@ import java.util.Set;
 import static android.R.id.list;
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
-/**
- * Created by frost on 2017-09-27.
- */
+
 
 public class ValueActivity extends AppCompatActivity {
     private String message;
@@ -36,7 +50,7 @@ public class ValueActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_edit_value);
         final  int duration = Toast.LENGTH_SHORT;
-
+        //print some message to clarify what we are doing now
         Intent intent = getIntent();
         message = intent.getStringExtra(android.provider.AlarmClock.EXTRA_MESSAGE);
         TextView textView = (TextView) findViewById(R.id.textView5);
@@ -70,6 +84,7 @@ public class ValueActivity extends AppCompatActivity {
                     return;
                     //if negative, go back
                 }
+                //save new value and date
                 SharedPreferences.Editor editor = sharedPref.edit();
                 editor.putInt("current value", current);
 
@@ -98,6 +113,7 @@ public class ValueActivity extends AppCompatActivity {
                 int current = sharedPref.getInt("current value", 0);
                 current = current +1;
                 SharedPreferences.Editor editor = sharedPref.edit();
+                //Save new value and  edit date
                 editor.putInt("current value", current);
 
                 DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -123,13 +139,14 @@ public class ValueActivity extends AppCompatActivity {
                 int initial = sharedPref.getInt("initial value", 0);
 
                 SharedPreferences.Editor editor = sharedPref.edit();
+                //save new value and date
                 editor.putInt("current value", initial);
 
                 DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                 Date date = new Date();
                 editor.putString("date",  dateFormat.format(date));
                 editor.commit();
-
+                //refresh current value
                 TextView textView2 = (TextView) findViewById(R.id.textView7);
                 String info = "current value: " + initial;
 
@@ -152,6 +169,7 @@ public class ValueActivity extends AppCompatActivity {
                 String csvList = prefs.getString("myList",null);
                 String[] items = csvList.split(",");
                 List<String> list = new ArrayList<String>();
+                //delete from item list
                 for(int i=0; i < items.length; i++){
                     list.add(items[i]);
                 }
@@ -162,15 +180,15 @@ public class ValueActivity extends AppCompatActivity {
                     csList.append(s);
                     csList.append(",");
                 }
+                //save item list
 
                 edit.putString("myList", csList.toString());
                 edit.commit();
+                //delete the key of SharedPreferences
                 editor.clear();
                 editor.commit();
                 finish();
 
-                //
-                //......
             }
         });
 
